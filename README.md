@@ -25,8 +25,8 @@ Das ist die Innovation: Statt hunderte Zeilen Glue-Code, State-Management und Po
 - Node.js (wird automatisch installiert)
 
 ```bash
-git clone https://github.com/GunnarMUC/weft_fork.git
-cd weft_fork
+git clone https://github.com/GunnarMUC/weft-clinic-DE-complaintmgmt.git
+cd weft-clinic-DE-complaintmgmt
 cp .env.example .env
 ./start.sh
 ```
@@ -45,6 +45,11 @@ Der Katalog (`catalog/`) enthält bereits Email, Postgres, API-Triggers und mehr
 Siehe `DESIGN.md` für Architektur und `workflows/beschwerde-analyzer.weft` für das aktuelle Beispiel.
 
 Fragen? Dieses Fork ist für den internen Klinik-Einsatz. Human-in-the-Loop bleibt immer zentral.
+
+### Sicherheit & Produktion
+- **AES-256-GCM** für credential encryption. Setze `CREDENTIAL_ENCRYPTION_KEY` in `.env` (generiert via `openssl rand -base64 32`). Ohne diesen Key startet der Server in `DEPLOYMENT_MODE=cloud` nicht.
+- **Rate Limiting** ist standardmäßig aktiv (200 req/s, konfigurierbar in `.env`).
+- **Code Sandbox** (nsjail) für lokale Dev deaktiviert — in Produktion via `CODE_SANDBOX_ENABLED=true` aktivieren.
 
 Viel Erfolg bei der Verbesserung der Beschwerdebearbeitung. Weft macht aus chaotischen AI-Pipelines echte, produktionsreife, auditierbare Systeme.
 
@@ -131,6 +136,6 @@ cargo test           # works without PostgreSQL
 
 ## License
 
-[O'Saasy License](./LICENSE). MIT with a SaaS restriction: you can use, modify, and self-host freely, but you cannot offer it as a competing hosted service. See [osaasy.dev](https://osaasy.dev/).
+[Apache 2.0](./LICENSE).
 
-Copyright © 2026 Quentin Feuillade--Montixi.
+Copyright © 2026 Gunnar Mueller, ClinicShield®. Original WeaveMind platform copyright © 2026 Quentin Feuillade--Montixi.
