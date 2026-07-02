@@ -1,0 +1,21 @@
+This project is a fork of WeaveMind/Weft (https://github.com/weavemind/weft),
+originally created by Quentin Feuillade--Montixi.
+
+**Original upstream code** (crates/, catalog/, dashboard/src/lib/ai/, dashboard/src/routes/,
+and other unmodified or base files from the original Weft project):
+
+    Licensed under the O'Saasy License — see LICENSE file for full terms.
+    Copyright © 2026 Quentin Feuillade--Montixi.
+
+**Clinic-specific modifications and additions** (workflows/*.weft, README.md,
+documentation, and any new files added since commit 07a55cf):
+
+    Licensed under the Apache License, Version 2.0.
+    Copyright © 2026 Gunnar Mueller, ClinicShield®.
+
+You may use, modify, and distribute the clinic-specific portions under Apache 2.0,
+provided you comply with the O'Saasy License for the upstream code. The O'Saasy
+License's SaaS restriction (Clause 2) applies to the Software as a whole:
+you may not offer this project, or derivatives, as a competing hosted/SaaS service.
+
+See https://osaasy.dev/ for details on the O'Saasy License.

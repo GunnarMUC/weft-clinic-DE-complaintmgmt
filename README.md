@@ -136,6 +136,6 @@ cargo test           # works without PostgreSQL
 
 ## License
 
-[Apache 2.0](./LICENSE).
+**Dual-licensed.** Upstream WeaveMind platform (crates/, catalog/, dashboard base): [O'Saasy License](./LICENSE). Clinic-specific extensions (workflows/, docs): [Apache 2.0](./LICENSE.FORK). Details in [LICENSE.FORK](./LICENSE.FORK).
 
-Copyright © 2026 Gunnar Mueller, ClinicShield®. Original WeaveMind platform copyright © 2026 Quentin Feuillade--Montixi.
+Original Weft platform copyright © 2026 Quentin Feuillade--Montixi. Clinic fork & workflows © 2026 Gunnar Mueller, ClinicShield®.
