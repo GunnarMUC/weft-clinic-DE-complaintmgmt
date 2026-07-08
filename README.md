@@ -1,6 +1,7 @@
 # Weft Fork – Klinik Beschwerdebrief-Analyzer
 
 [![CI](https://github.com/GunnarMUC/weft-clinic-DE-complaintmgmt/actions/workflows/ci.yml/badge.svg)](https://github.com/GunnarMUC/weft-clinic-DE-complaintmgmt/actions)
+[![Lint](https://github.com/GunnarMUC/weft-clinic-DE-complaintmgmt/actions/workflows/lint.yml/badge.svg)](https://github.com/GunnarMUC/weft-clinic-DE-complaintmgmt/actions)
 
 **Original von WeaveMindAI / Quentin Feuillade-Montixi. Adaptiert und erweitert von Gunnar Mueller, ClinicShield® (R) Munich 2026.**
 
